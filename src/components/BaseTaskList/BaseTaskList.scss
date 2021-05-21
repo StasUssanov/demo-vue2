@@ -1,0 +1,11 @@
+@import "src/styles/common";
+
+.base-task-list {
+  &__item {
+    margin-bottom: spacer();
+
+    &:last-child {
+      margin-bottom: unset;
+    }
+  }
+}

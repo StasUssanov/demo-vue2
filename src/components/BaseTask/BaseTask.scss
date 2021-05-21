@@ -1,0 +1,20 @@
+@import "src/styles/common";
+
+.base-task {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: $border-root;
+  border-radius: $border-radius-root;
+
+  &__label {
+    flex-grow: 1;
+    text-align: left;
+
+    &--completed {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+$font-size: 14;
+$font-size-root: $font-size + px;
+
+@function toRem($value) {
+  $remValue: ($value / $font-size) + rem;
+  @return $remValue;
+}
+
+/* ~~~ ~~~ */
+
+$transition: ease-in-out 0.125s;
+
+@function spacer($value:1) {
+  $remValue: ($value*8 / $font-size) + rem;
+  @return $remValue;
+}
+
+/* ~~~ ~~~ */
+
+$border-root: 1px solid gray;
+$border-radius-root: toRem(4);
+
+/* ~~~ ~~~ */
+
+$background: (
+        "card": #FFFFFF,
+        "default": #F6F6F6,
+);
